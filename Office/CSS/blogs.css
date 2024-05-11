@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto:wght@400;700&display=swap');
+
+/* Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --transition: 0.2s linear;
+    --gradient: linear-gradient(45deg, #ed5d74, #f28057);
+    --card-shadow: 5.7px 4.6px 62.6px -50px rgba(0, 0, 0, 0.085),
+        25px 20px 500px -50px rgba(0, 0, 0, 0.17);
+    --padding-inline-section: 20px;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 27px;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+/* Utility Classes */
+
+.small-bold-text {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding: var(--padding-inline-section);
+    overflow: hidden;
+}
+
+.container h2 {
+    margin-bottom: 10px;
+}
+
+.container p {
+    margin-bottom: 10px;
+    line-height: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.primary-button {
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondry-text-color);
+    transition: 0.2s ease-out;
+    text-align: center;
+}
+
+.primary-button:hover {
+    background-color: var(--accent-color-dark);
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.secondry-button {
+    border: 0.5px solid var(--secondry-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--primary-text-color);
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+
+.secondry-button:hover {
+    color: black !important;
+    font-size: 8px;
+    padding: 10px 20px;
+    background: #fff;
+    border: 0;
+    border-radius: 10px;
+    outline: none;
+}
+
+/* Nav Bar */
+
+.main-nav {
+    height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.company-logo img {
+    width: 200px;
+}
+
+.nav-links {
+    display: block;
+    transition: transform 0.3s ease;
+    /* Add transition for smooth sliding */
+    transform: translateX(0);
+    flex-basis: 730px;
+}
+
+.nav-links ul {
+    justify-content: end;
+    gap: 40px;
+}
+
+.hover-links {
+    color: #fff;
+    transition: 0.2s ease-out;
+}
+
+.hover-links:hover {
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+/* Header Section */
+
+header {
+    width: 100%;
+    padding: 20px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Assest/blog-hero.jpg);
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+
+.hero-head {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    flex-wrap: wrap;
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.hero-head h1 {
+    color: #fff;
+    line-height: 1.1;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.hero-head p {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* BLOG SECTION */
+
+.latest-blogs {
+    background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    text-align: center;
+}
+
+.latest-blogs h2 {
+    padding: 20px;
+    font-size: 50px;
+    padding-top: 40px;
+}
+
+
+.blog-cards {
+    background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: ease-out 0.2s;
+    background: #fff;
+    width: 22%;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 15px;
+    height: 450px;
+}
+
+.card:hover {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.card img {
+    height: 200px;
+}
+
+.author h4 {
+    font-size: 13px;
+    color: #20a9ed;
+}
+
+.author {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+
+.author p {
+    font-size: 14px;
+    margin-top: -4px;
+    font-weight: 600;
+}
+
+.card h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    min-height: 110px;
+}
+
+.card a {
+    transition: 0.2s ease-out;
+    text-decoration: none;
+    padding: 10px;
+    text-align: right;
+    font-size: 1.2rem;
+    color: #f07052;
+    display: block;
+    font-size: 18px;
+}
+
+.card:hover a{
+    color: #20a9ed;
+}
+
+
+.card-text {
+    padding: 0 15px;
+    padding-top: 10px;
+}
+
+.labels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.label {
+    background: var(--gradient);
+    border-radius: 9999px;
+    width: max-content;
+    padding: 7px 12px;
+    color: #fff;
+    font-size: 11px;
+}
+
+.new-card {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .new-card.show { /* Add "show" class to trigger animation */
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Optional: Animation delay using CSS (adjust timing as needed) */
+  .blog-cards .new-card:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  .blog-cards .new-card:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  .blog-cards .new-card:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+.card:hover .label {
+    background: linear-gradient(45deg, #20a9ed, #647efd);
+}
+
+.card .banner {
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+    border-bottom-left-radius: 0;
+    width: 100%;
+}
+
+.card:hover .banner {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+footer {
+    padding-block: 80px;
+    background-color: #ebf2fa;
+}
+
+.link-coloum {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+
+}
+
+.foot-container {
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.more-blogs {
+    color: black;
+    font-size: 22px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.load-more {
+    background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+    text-align: center;
+}
+
+/* Sub Footer */
+
+.subfooter {
+    background-color: #b9cde4;
+    padding: var(--padding-inline-section);
+}
+
+.sub-footer-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1127px) {
+    
+    .nav-toggle {
+        margin-right: 20px;
+        display: block;
+    }
+
+    .main-nav {
+        overflow: initial;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .nav-links {
+        position: fixed;
+        background-color: transparent;
+        backdrop-filter: blur(8px);
+        left: -100%;
+        top: 50px;
+        width: 100%;
+        padding-block: 20px;
+        transition: 0.2s ease-out;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+    }
+    
+    .card {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+       
+   
+    .card {
+        width: 40%;
+    }
+
+    .card img {
+        height: 60%;
+    }
+
+    .card a  {
+        transition: none;
+        transform: none;
+    }
+
+    .hero-head {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    
+    header {
+        padding: 0;
+    }
+    
+    .card {width: 90%;
+    }
+
+    .hero-head {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
