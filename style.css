@@ -251,7 +251,7 @@ header {
     box-sizing: border-box;
     cursor: pointer;
     margin: 10px 15px;
-    background-image: url(/Assest/Home/card1.jpg);
+    background-image: url(Assest/Home/card1.jpg);
     background-position: center;
     background-size: cover;
     transition: transform 0.5s;
@@ -259,19 +259,19 @@ header {
 }
 
 .card1 {
-    background-image: url(/Assest/Home/card1.jpg);
+    background-image: url(Assest/Home/card1.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .card2 {
-    background-image: url(/Assest/Home/card2.jpg);
+    background-image: url(Assest/Home/card2.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .card3 {
-    background-image: url(/Assest/Home/card3.jpg);
+    background-image: url(Assest/Home/card3.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -297,7 +297,7 @@ header {
 }
 
 .top-profiles-section {
-    background-image: url(/Assest/Home/back.jpg);
+    background-image: url(Assest/Home/back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -628,7 +628,7 @@ header {
 
 .features-section {
     padding: 60px var(--padding-inline-section) 0;
-    background-image: url(./Assest/asset\ 32.svg);
+    background-image: url(Assest/asset\ 32.svg);
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -848,7 +848,7 @@ header {
     display: flex;
     width: 100%;
     flex-direction: column;
-    background-image: url(/Assest/Home/faq.jpg);
+    background-image: url(Assest/Home/faq.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
