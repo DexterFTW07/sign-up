@@ -208,7 +208,7 @@ header {
     width: 100%;
     padding: 20px;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Assest/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Assest/hero.jpg);
     background-position: center;
     background-size: cover;
     box-sizing: border-box;
@@ -255,7 +255,7 @@ header {
     box-sizing: border-box;
     cursor: pointer;
     margin: 10px 15px;
-    background-image: url(/Assest/Home/card1.jpg);
+    background-image: url(Assest/Home/card1.jpg);
     background-position: center;
     background-size: cover;
     transition: transform 0.5s;
@@ -263,37 +263,37 @@ header {
 }
 
 .card1 {
-    background-image: url(/Assest/Home/card1.jpg);
+    background-image: url(Assest/Home/card1.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .card2 {
-    background-image: url(/Assest/Home/card2.jpg);
+    background-image: url(Assest/Home/card2.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .card3 {
-    background-image: url(/Assest/Home/card3.jpg);
+    background-image: url(Assest/Home/card3.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .card4 {
-    background-image: url(/Assest/Home/card4.jpg);
+    background-image: url(Assest/Home/card4.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .card5 {
-    background-image: url(/Assest/Home/card5.jpg);
+    background-image: url(Assest/Home/card5.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .card6 {
-    background-image: url(/Assest/Home/card6.jpg);
+    background-image: url(Assest/Home/card6.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -318,7 +318,7 @@ header {
 }
 
 .top-profiles-section {
-    background-image: url(/Assest/Home/back.jpg);
+    background-image: url(Assest/Home/back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -671,7 +671,7 @@ header {
 .more-card {
     width: 280px;
     text-align: center;
-    background: url(/Assest/gareth-harper-yACpBcInUos-unsplash.jpg);
+    background: url(Assest/gareth-harper-yACpBcInUos-unsplash.jpg);
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -764,7 +764,7 @@ header {
 .trending-profile-card {
     width: 260px;
     text-align: center;
-    background-image: url(/Assest/pexels-joaojesusdesign-925743.jpg);
+    background-image: url(Assest/pexels-joaojesusdesign-925743.jpg);
     background-position: bottom;
     background-size: cover;
     color: white;
@@ -1216,7 +1216,7 @@ header {
     display: flex;
     width: 100%;
     flex-direction: column;
-    background-image: url(/Assest/Home/faq.jpg);
+    background-image: url(Assest/Home/faq.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -1465,29 +1465,29 @@ header {
 }
 
 .section1 {
-    background: url(/Assest/celebrity.jpg);
+    background: url(Assest/celebrity.jpg);
     background-size: cover;
 }
 
 .section2 {
-    background: url(/Assest/russian.jpg);
+    background: url(Assest/russian.jpg);
     background-size: cover;
 }
 
 .section3 {
-    background: url(/Assest/dating.jpg);
+    background: url(Assest/dating.jpg);
     background-size: cover;
 }
 .section4 {
-    background: url(/Assest/low\ priced.jpg);
+    background: url(Assest/low\ priced.jpg);
     background-size: cover;
 }
 .section5 {
-    background: url(/Assest/newly.jpg);
+    background: url(Assest/newly.jpg);
     background-size: cover;
 }
 .section6 {
-    background: url(/Assest/massage.jpg);
+    background: url(Assest/massage.jpg);
     background-size: cover;
 }
 
